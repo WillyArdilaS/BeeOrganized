@@ -6,15 +6,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Bee Organized </title>
         <link rel="icon" href="Assets/Favicon.svg" type="image/svg" sizes="32x32">
+        <link rel="stylesheet" href="./CSS/IndexStyle.css">
     </head>
 
     <body>
         <header id="header">
-            <h1> Bee Organized </h1>
+            <h1> Be<strong>e</strong> Organized </h1>
         </header>
 
         <main id="main">
-            
+            <section id="container">
+                <section id="container-cards">
+                    <article id="cards-toDo" class="card">
+                        <h2 class="card-title"> To Do </h2>
+                        <section id="toDo-tasksContainer" class="tasksContainer">
+                            <article class="task" id="task1">
+                                <h3> Task 1 Title </h3>
+                                <h4> Description </h4>
+                                <h4> Owner </h4>
+                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
+                            </article>
+                        </section>
+                    </article>
+    
+                    <article id="cards-doing" class="card">
+                        <h2 class="card-title"> Doing </h2>
+                        <section id="doing-tasksContainer" class="tasksContainer"></section>
+                    </article>
+    
+                    <article id="cards-done" class="card">
+                        <h2 class="card-title"> Done </h2>
+                        <section id="done-tasksContainer" class="tasksContainer"></section>
+                    </article>
+                </section>
+    
+                <button type="button" id="container-btnNewTask"> + </button>
+            </section>
+
+            <!-- Create new task panel -->
+            <aside id="newTask"> 
+                <section id="newTask-panel">
+                    <h2 id="panel-formTitle"> New Task </h2>
+
+                    <form action="#" id="panel-form">
+                        <label for="taskTitle" hidden> Title </label>
+                        <input type="text" name="taskTitle" id="taskTitle" placeholder="Title" required>
+    
+                        <label for="taskDescription" hidden> Description </label>
+                        <input type="text" name="taskDescription" id="taskDescription" placeholder="Description" required>
+    
+                        <label for="taskOwner" hidden> Owner </label>
+                        <select name="taskOwner" id="taskOwner" required>
+                            <option hidden selected> Owner </option>
+                            <option value="user1"> User 1 </option>
+                            <option value="user2"> User 2 </option>
+                            <option value="user3"> User 3 </option>
+                        </select>
+    
+                        <section id="form-dates">
+                            <label for="startDate"> Start Date </label>
+                            <input type="date" name="startDate" id="startDate">
+    
+                            <label for="endDate"> End Date </label>
+                            <input type="date" name="endDate" id="endDate">
+                        </section>
+    
+                        <button type="submit" id="form-btnAddTask"> ADD </button>
+                    </form>
+                </section>
+
+                <button type="button" id="newTask-btnClose"> - </button>
+            </aside>
         </main>
     </body>
 </html>
