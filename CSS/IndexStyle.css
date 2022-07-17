@@ -1,0 +1,13 @@
+/* Components files */
+@import "Components/Cards.css";
+
+/* Config files */
+@import "Config/InitialElements.css";
+@import "Config/Variables.css";
+
+/* Theme files */ 
+@import "Theme/Article.css"; 
+@import "Theme/Aside.css"; 
+@import "Theme/Header.css"; 
+@import "Theme/Main.css"; 
+@import "Theme/Section.css"; 
