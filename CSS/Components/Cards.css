@@ -1,0 +1,23 @@
+#container-cards {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 158px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 26%;
+    height: 440px;
+
+    background-image: url("../../Assets/Card.png");
+    background-size: 95%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.card-title {
+    background-color: var(--white);
+}
