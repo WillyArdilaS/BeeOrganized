@@ -10,8 +10,8 @@ Clon de la app Trello para el módulo 3: "JavaScript"
 
 ## BeeOrganized
 
-![](https://i.imgur.com/eup1lhI.png "BeeOrganized-1")
-
+![](https://i.imgur.com/yHEviPf.png "BeeOrganized-1")
+![](https://i.imgur.com/QZR3AcF.png "BeeOrganized-2")
 
 
 ## Autor
