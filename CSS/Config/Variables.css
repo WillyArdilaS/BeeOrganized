@@ -3,8 +3,13 @@
     --yellow: #FFDE55;
     --black: #0F0F0F;
     --white: #F8F8F8;
-    --dark-brown: #26180D;
+    --light-brown: #917963;
+    --brown: #59412D;
+    --dark-brown: #332011;
 
     /* Fonts */
     --extra-bold: 800;
+    --bold: 600;
+
+    /* Shadows */
 }

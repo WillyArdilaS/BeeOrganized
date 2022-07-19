@@ -1,0 +1,65 @@
+#newTask-panel {
+    width: 100%;
+    height: 100%;
+}
+
+#panel-formTitle {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 6%;
+    padding-bottom: 2%;
+    border-bottom: 5px solid var(--black);
+}
+
+#panel-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#panel-form input, textarea, select {
+    border: 3px solid var(--black);
+    border-radius: 6px;
+
+    /* Font settings */
+    font-weight: var(--bold);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#taskTitle {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 5%;
+}
+
+#taskDescription {
+    width: 50%;
+    height: 60px;
+    margin-bottom: 5%;
+}
+
+#taskOwner {
+    width: 50%;
+    height: 28px;
+    margin-bottom: 5%;
+}
+
+#taskOwner:hover {
+    cursor: pointer;
+}
+
+#form-dates {
+    width: 80%;
+    margin-bottom: 6%;
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#startDate, #endDate {
+    width: 24%;
+    height: 22px;
+    margin-left: -2%;
+}
