@@ -20,23 +20,42 @@
                     <article id="cards-toDo" class="card">
                         <h2 class="card-title"> To Do </h2>
                         <section id="toDo-tasksContainer" class="tasksContainer">
-                            <article class="task" id="task1">
+                            <article id="task1" class="task">
                                 <h3> Task 1 Title </h3>
-                                <h4> Description </h4>
-                                <h4> Owner </h4>
+                                <p> Description </p>
+                                <p> Owner </p>
                                 <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
+                                <button class="task-btnClose"> x </button>
+                            </article>
+                            <article id="task2" class="task">
+                                <h3> Task 2 Title </h3>
+                                <p> Description </p>
+                                <p> Owner </p>
+                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
+                                <button class="task-btnClose"> x </button>
                             </article>
                         </section>
+                        <div class="card-bottomLine"></div>
                     </article>
     
                     <article id="cards-doing" class="card">
                         <h2 class="card-title"> Doing </h2>
-                        <section id="doing-tasksContainer" class="tasksContainer"></section>
+                        <section id="doing-tasksContainer" class="tasksContainer">
+                            <article id="task2" class="task">
+                                <h3> Task 3 Title </h3>
+                                <p> Description </p>
+                                <p> Owner </p>
+                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
+                                <button class="task-btnClose"> x </button>
+                            </article>
+                        </section>
+                        <div class="card-bottomLine"></div>
                     </article>
     
                     <article id="cards-done" class="card">
                         <h2 class="card-title"> Done </h2>
                         <section id="done-tasksContainer" class="tasksContainer"></section>
+                        <div class="card-bottomLine"></div>
                     </article>
                 </section>
     
@@ -53,8 +72,8 @@
                         <input type="text" name="taskTitle" id="taskTitle" placeholder="Title" required>
     
                         <label for="taskDescription" hidden> Description </label>
-                        <input type="text" name="taskDescription" id="taskDescription" placeholder="Description" required>
-    
+                        <textarea rows = "5" cols = "100" name="taskDescription" id="taskDescription" placeholder="Description" required></textarea>
+
                         <label for="taskOwner" hidden> Owner </label>
                         <select name="taskOwner" id="taskOwner" required>
                             <option hidden selected> Owner </option>
@@ -75,8 +94,11 @@
                     </form>
                 </section>
 
-                <button type="button" id="newTask-btnClose"> - </button>
+                <button type="button" id="newTask-btnClose"></button>
             </aside>
         </main>
+
+        <!-- Scripts -->
+        <script src="./JS/PanelForm.js"></script>
     </body>
 </html>

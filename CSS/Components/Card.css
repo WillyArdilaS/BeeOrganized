@@ -1,0 +1,47 @@
+#container-cards {
+    width: 75%;
+    margin: 2% 0;
+    margin-left: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 310px;
+    margin: 0;
+    padding-bottom: 3%;
+    position: relative;
+    border: 5px solid var(--dark-brown);
+    border-radius: 16px;
+
+    /* Wood background style */
+    background: repeating-linear-gradient(
+        90deg,
+        var(--brown) 0%,
+        var(--brown) 12%,
+        var(--dark-brown) 12%,
+        var(--dark-brown) 13.5%,
+        var(--light-brown) 13.5%,
+        var(--light-brown) 25.5%,
+        var(--dark-brown) 25.5%,
+        var(--dark-brown) 27%
+    );
+}
+
+.card-title {
+    border-top: 5px solid var(--dark-brown);
+    border-bottom: 5px solid var(--dark-brown);
+    background-color: var(--white);
+}
+
+.card-bottomLine {
+    width: 94%;
+    padding: 3%;
+    position: absolute;
+    bottom: 2%;
+
+    border-top: 5px solid var(--dark-brown);
+    border-bottom: 5px solid var(--dark-brown);
+    background-color: var(--white);
+}

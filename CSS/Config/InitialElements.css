@@ -1,19 +1,14 @@
 body {
     margin: 0;
     font-family: Outfit, sans-serif;
-
-    /* Background image */
-    background-image: url("../../Assets/Background.png");
-    background-size: 99vw;
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-color: var(--white);
 }
 
 h1 {
     max-width: 54%;
     margin: 0 auto;
     margin-top: 36px;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
 
     /* Font settings */
     font-weight: var(--extra-bold);
@@ -34,14 +29,33 @@ h1 strong {
 }
 
 h2 {
-    max-width: 91.7%;
-    margin: 8% -0.1%;
-    border: 5px solid var(--dark-brown);
-
     /* Font settings */
     font-weight: var(--extra-bold);
     font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
     word-spacing: 12px;
+}
+
+h3 {
+    /* Font settings */
+    font-weight: var(--extra-bold);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    /* Font settings */
+    font-weight: var(--extra-bold);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+label {
+    /* Font settings */
+    font-weight: var(--bold);
+    font-size: 0.95rem;
+    text-transform: uppercase;
 }
