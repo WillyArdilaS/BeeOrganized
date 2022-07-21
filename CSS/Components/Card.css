@@ -13,6 +13,7 @@
     position: relative;
     border: 5px solid var(--dark-brown);
     border-radius: 16px;
+    box-shadow: var(--card-shadow);
 
     /* Wood background style */
     background: repeating-linear-gradient(
