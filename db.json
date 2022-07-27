@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "state": "done",
+            "title": "Estilos CSS",
+            "description": "Agregar los estilos según el sketch",
+            "owner": "user 3",
+            "startDate": "19/07/2022",
+            "endDate": "20/07/2022"
+        },
+        {
+            "id": 2,
+            "state": "to do",
+            "title": "Limitar fecha mínima",
+            "description": "Hacer que la fecha mínima no pueda ser anterior al día actual",
+            "owner": "user 1",
+            "startDate": "01/08/2022",
+            "endDate": "06/08/2022"
+        },
+        {
+            "id": 3,
+            "state": "to do",
+            "title": "Movimiento panel New Task",
+            "description": "Suavizar el movimiento de aparición y desaparición del panel",
+            "owner": "user 2",
+            "startDate": "09/09/2022",
+            "endDate": "01/01/2023"
+        }
+    ]
+}
