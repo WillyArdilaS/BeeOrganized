@@ -7,6 +7,7 @@
         <title> Bee Organized </title>
         <link rel="icon" href="Assets/Favicon.svg" type="image/svg" sizes="32x32">
         <link rel="stylesheet" href="./CSS/IndexStyle.css">
+        <script src="./JS/Helpers/OwnerDropdown.js" type="module"></script>
     </head>
 
     <body>
@@ -22,14 +23,14 @@
                         <section id="toDo-tasksContainer" class="tasksContainer">
                             <article id="task1" class="task">
                                 <h3> Task 1 Title </h3>
-                                <p> Description </p>
+                                <p class="task-description"> Description </p>
                                 <p> Owner </p>
                                 <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
                                 <button class="task-btnClose"> X </button>
                             </article>
                             <article id="task2" class="task">
                                 <h3> Task 2 Title </h3>
-                                <p> Description </p>
+                                <p class="task-description"> Description </p>
                                 <p> Owner </p>
                                 <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
                                 <button class="task-btnClose"> X </button>
@@ -40,21 +41,21 @@
     
                     <article id="cards-doing" class="card">
                         <h2 class="card-title"> Doing </h2>
-                        <section id="doing-tasksContainer" class="tasksContainer">
-                            <article id="task2" class="task">
-                                <h3> Task 3 Title </h3>
-                                <p> Description </p>
-                                <p> Owner </p>
-                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
-                                <button class="task-btnClose"> X </button>
-                            </article>
-                        </section>
+                        <section id="doing-tasksContainer" class="tasksContainer"></section>
                         <div class="card-bottomLine"></div>
                     </article>
     
                     <article id="cards-done" class="card">
                         <h2 class="card-title"> Done </h2>
-                        <section id="done-tasksContainer" class="tasksContainer"></section>
+                        <section id="done-tasksContainer" class="tasksContainer">
+                            <article id="task3" class="task">
+                                <h3> Task 3 Title </h3>
+                                <p class="task-description"> Description </p>
+                                <p> Owner </p>
+                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
+                                <button class="task-btnClose"> X </button>
+                            </article>
+                        </section>
                         <div class="card-bottomLine"></div>
                     </article>
                 </section>
@@ -77,9 +78,6 @@
                         <label for="taskOwner" hidden> Owner </label>
                         <select name="taskOwner" id="taskOwner" required>
                             <option hidden selected> Owner </option>
-                            <option value="user1"> User 1 </option>
-                            <option value="user2"> User 2 </option>
-                            <option value="user3"> User 3 </option>
                         </select>
     
                         <section id="form-dates">
@@ -98,7 +96,8 @@
             </aside>
         </main>
 
-        <!-- Scripts -->
-        <script src="./JS/PanelFormMovement.js"></script>
+        <!-- Internal scripts -->
+        
+        <script src="./JS/Helpers/PanelFormMovement.js"></script>
     </body>
 </html>

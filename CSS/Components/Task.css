@@ -16,8 +16,23 @@
 .task h3 {
     margin-top: 3%;
     margin-bottom: 6%;
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .task p {
     margin-bottom: 5%;
+}
+
+.task-description {
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
