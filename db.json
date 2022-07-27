@@ -20,7 +20,7 @@
         },
         {
             "id": 3,
-            "state": "doing",
+            "state": "to-do",
             "title": "Movimiento panel New Task",
             "description": "Suavizar el movimiento de aparición y desaparición del panel",
             "owner": "user 2",
