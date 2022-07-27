@@ -19,22 +19,7 @@
                 <section id="container-cards">
                     <article id="cards-toDo" class="card">
                         <h2 class="card-title"> To Do </h2>
-                        <section id="toDo-tasksContainer" class="tasksContainer">
-                            <article id="task1" class="task">
-                                <h3> Task 1 Title </h3>
-                                <p class="task-description"> Description </p>
-                                <p> Owner </p>
-                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
-                                <button class="task-btnClose"> X </button>
-                            </article>
-                            <article id="task2" class="task">
-                                <h3> Task 2 Title </h3>
-                                <p class="task-description"> Description </p>
-                                <p> Owner </p>
-                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
-                                <button class="task-btnClose"> X </button>
-                            </article>
-                        </section>
+                        <section id="toDo-tasksContainer" class="tasksContainer"></section>
                         <div class="card-bottomLine"></div>
                     </article>
     
@@ -46,15 +31,7 @@
     
                     <article id="cards-done" class="card">
                         <h2 class="card-title"> Done </h2>
-                        <section id="done-tasksContainer" class="tasksContainer">
-                            <article id="task3" class="task">
-                                <h3> Task 3 Title </h3>
-                                <p class="task-description"> Description </p>
-                                <p> Owner </p>
-                                <p> Start Date: 00/00/0000 - End Date: 00/00/0000 </p>
-                                <button class="task-btnClose"> X </button>
-                            </article>
-                        </section>
+                        <section id="done-tasksContainer" class="tasksContainer"></section>
                         <div class="card-bottomLine"></div>
                     </article>
                 </section>
@@ -95,7 +72,11 @@
             </aside>
         </main>
 
+        <!-- External scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
         <!-- Internal scripts -->
+        <script src="./JS/API/Requests.js"></script>
         <script src="./JS/Helpers/OwnerDropdown.js" type="module"></script>
         <script src="./JS/Helpers/PanelFormMovement.js"></script>
     </body>
