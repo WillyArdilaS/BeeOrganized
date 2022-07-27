@@ -2,7 +2,7 @@ const urlAPI = "https://my-json-server.typicode.com/WillyArdilaS/M3U2TrelloAppWi
 
 /* Axios requests */
 axios
-    .get(`${urlApi}/tasks`)
+    .get(`${urlAPI}/tasks`)
     .then((res) => showAllTask(res.data))
     .catch((err) => console.log(err));
 
@@ -16,7 +16,7 @@ const createTask = (task) => {
         <article id=${task.id} class="task">
             <h3> ${task.title} </h3>
             <p class="task-description"> ${task.description} </p>
-            <p> ${task.owner} </p>
+            <p> Owner: ${task.owner} </p>
             <p> Start Date: ${task.startDate} - End Date: ${task.endDate} </p>
             <button class="task-btnClose"> X </button>
         </article>
@@ -27,10 +27,10 @@ const createTask = (task) => {
     let containerDone = document.getElementById("done-tasksContainer");
 
     if(task.state === "to-do") {
-        containerToDo.appendChild(newTaskHTML);
+        containerToDo.innerHTML += newTaskHTML;
     } else if(task.state === "doing") {
-        containerDoing.appendChild(newTaskHTML);
+        containerDoing.innerHTML += newTaskHTML;
     } else if(task.state === "done") {
-        containerDone.appendChild(newTaskHTML);
+        containerDone.innerHTML += newTaskHTML;
     }
 }
