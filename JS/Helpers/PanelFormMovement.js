@@ -15,3 +15,5 @@ btnHide.addEventListener("click", function(event) {
 
     panel.style.visibility = "hidden";
 })
+
+export {panel, btnShow, btnHide};
