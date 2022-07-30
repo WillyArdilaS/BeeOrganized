@@ -1,4 +1,3 @@
-// Variables
 const panel = document.getElementById("newTask");
 const btnShow = document.getElementById("container-btnNewTask");
 const btnHide = document.getElementById("newTask-btnClose");

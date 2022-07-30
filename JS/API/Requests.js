@@ -1,8 +1,8 @@
-const urlAPI = "https://my-json-server.typicode.com/WillyArdilaS/M3U2TrelloAppWilliamArdila";
+const API_URL = "https://my-json-server.typicode.com/FIMLMReactJS/M3U2TrelloAppWilliamArdila";
 
 /* Axios requests */
 axios
-    .get(`${urlAPI}/tasks`)
+    .get(`${API_URL}/tasks`)
     .then((res) => showAllTask(res.data))
     .catch((err) => console.log(err));
 
