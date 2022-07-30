@@ -1,4 +1,4 @@
-export const sort = new Sortable.default(
+ export const sort = new Sortable.default(
     document.querySelectorAll(".tasksContainer"),
-    {draggable: "article"}
+    {draggable: "article"}, 
 );

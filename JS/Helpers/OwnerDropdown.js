@@ -2,7 +2,7 @@ import { owners } from "./OwnerList.js";
 
 let selectHTML = document.getElementById("taskOwner");
 
-const getOwner = (pos)=>{
+const getOwner = (pos) => {
     return new Promise((resolve, reject)=>{
         let owner = owners[pos];
 
@@ -10,7 +10,7 @@ const getOwner = (pos)=>{
     });
 }
 
-const showOwner = async ()=> {
+const showOwner = async () => {
     let ownerList = [];
 
     for(let i = 0; i < owners.length; i++) {
