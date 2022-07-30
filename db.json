@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "state": "to-do",
+            "state": "doing",
             "title": "Limitar fecha mínima",
             "description": "Hacer que la fecha mínima no pueda ser anterior al día actual",
             "owner": "user 1",

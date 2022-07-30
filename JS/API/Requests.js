@@ -19,13 +19,13 @@ const createTask = (task) => {
             <p> Owner: ${task.owner} </p>
             <p> Start Date: ${task.startDate} - End Date: ${task.endDate} </p>
             <button class="task-btnClose"> X </button>
-        </article>
+        </article> 
     `;
-
+    
     let containerToDo = document.getElementById("toDo-tasksContainer");
     let containerDoing = document.getElementById("doing-tasksContainer");
     let containerDone = document.getElementById("done-tasksContainer");
-
+    
     if(task.state === "to-do") {
         containerToDo.innerHTML += newTaskHTML;
     } else if(task.state === "doing") {
@@ -33,4 +33,4 @@ const createTask = (task) => {
     } else if(task.state === "done") {
         containerDone.innerHTML += newTaskHTML;
     }
-}
+} 

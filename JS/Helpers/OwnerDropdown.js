@@ -22,4 +22,4 @@ const showOwner = async ()=> {
     }
 }
 
-showOwner();
+export {showOwner};
