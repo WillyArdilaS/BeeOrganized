@@ -17,8 +17,8 @@ const createTask = (task) => {
             <h3 id="task${task.id}Title"> ${task.title} </h3>
             <p class="task-description"> ${task.description} </p>
             <p> Owner: ${task.owner} </p>
-            <p> Start Date: ${task.startDate} </p>
-            <p> End Date: ${task.endDate} </p>
+            <p> Start Date: ${dateFormat(task.startDate)} </p>
+            <p> End Date: ${dateFormat(task.endDate)} </p>
             <button type="button" class="task-btnClose"> X </button>
         </article> 
     `;
