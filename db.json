@@ -20,12 +20,12 @@
         },
         {
             "id": 3,
-            "state": "doing",
+            "state": "done",
             "title": "Tarea prueba 3",
             "description": "Descripción tarea prueba 3",
             "owner": "user 4",
-            "startDate": "22/08/2022",
-            "endDate": "24/08/2022"
+            "startDate": "03/08/2022",
+            "endDate": "04/08/2022"
         }
     ]
 }
