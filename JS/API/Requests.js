@@ -14,11 +14,12 @@ const showAllTask = (data) => {
 const createTask = (task) => {
     let newTaskHTML = `
         <article id=${task.id} class="task">
-            <h3> ${task.title} </h3>
+            <h3 id="task${task.id}Title"> ${task.title} </h3>
             <p class="task-description"> ${task.description} </p>
             <p> Owner: ${task.owner} </p>
-            <p> Start Date: ${task.startDate} - End Date: ${task.endDate} </p>
-            <button class="task-btnClose"> X </button>
+            <p> Start Date: ${task.startDate} </p>
+            <p> End Date: ${task.endDate} </p>
+            <button type="button" class="task-btnClose"> X </button>
         </article> 
     `;
     
@@ -33,4 +34,4 @@ const createTask = (task) => {
     } else if(task.state === "done") {
         containerDone.innerHTML += newTaskHTML;
     }
-} 
+}
