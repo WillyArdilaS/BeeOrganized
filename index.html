@@ -46,7 +46,7 @@
 
                     <form action="#" id="panel-form">
                         <label for="taskTitle" hidden> Title </label>
-                        <input type="text" name="taskTitle" id="taskTitle" placeholder="Title" required>
+                        <input type="text" name="taskTitle" id="taskTitle" placeholder="Title" autocomplete="off" required>
     
                         <label for="taskDescription" hidden> Description </label>
                         <textarea rows = "5" cols = "100" name="taskDescription" id="taskDescription" placeholder="Description" required></textarea>
@@ -76,10 +76,10 @@
         <script src="./JS/Libraries/Axios.js"></script>
         <script src="./JS/Libraries/Draggable.js"></script>
         <script src="./JS/Libraries/Hammer.js"></script>
+        <script src="./JS/Libraries/Moment.js"></script>
 
         <!-- Internal scripts -->
         <script src="./JS/API/Requests.js"></script>
         <script src="./JS/index.js" type="module"></script>
-        <script src="./JS/Helpers/PanelFormTouch.js"></script>
     </body>
 </html>
