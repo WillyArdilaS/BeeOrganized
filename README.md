@@ -1,8 +1,6 @@
 # Bee Organized
 
 ## Table of contents
-- [Bee Organized](#bee-organized)
-  - [Table of contents](#table-of-contents)
   - [Description](#description)
   - [Screenshots](#screenshots)
   - [Author](#author)
